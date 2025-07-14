@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login Administrativo</title>
+  <link rel="stylesheet" href="login.css" />
+</head>
+<body>
+  <div class="login-container">
+    <div class="logo-center">
+     <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="28" cy="28" r="27" fill="#48C774" stroke="#217a3c" stroke-width="2"/>
+  <path d="M28 13 L34 24 H22 Z" fill="#fff"/>
+  <path d="M42 36 L33 32 L38 28 Z" fill="#fff"/>
+  <path d="M14 36 L23 32 L18 28 Z" fill="#fff"/>
+  <ellipse cx="28" cy="42" rx="9" ry="3.8" fill="#72e27b" opacity="0.96"/>
+  <path d="M28 38 Q29 41, 32 42 Q29 40, 28 44 Q27 40, 24 42 Q27 41, 28 38 Z" fill="#217a3c" opacity="0.14"/>
+</svg>
+
+    </div>
+    <h2>Login Administrativo</h2>
+    <form id="form-login" autocomplete="off">
+      <div class="form-group">
+        <label for="email">E-mail</label>
+        <input type="text" id="email" autocomplete="username" required>
+      </div>
+      <div class="form-group">
+        <label for="senha">Senha</label>
+        <input type="password" id="senha" autocomplete="current-password" required>
+      </div>
+      <button id="btn-entrar" type="submit" disabled>Entrar</button>
+    </form>
+  </div>
+  <script src="login.js"></script>
+</body>
+</html>

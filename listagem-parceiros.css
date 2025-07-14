@@ -1,0 +1,121 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #f6f8f7;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+header {
+  background: #48C774;
+  color: #fff;
+  padding: 0 0 12px 0;
+  margin-bottom: 18px;
+  box-shadow: 0 2px 10px rgba(44, 128, 80, 0.08);
+}
+.logo-titulo {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 18px 30px 0 30px;
+}
+.logo-titulo h1 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+main {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 30px 14px 50px 14px;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  gap: 9px;
+  margin-bottom: 28px;
+}
+.search-bar input {
+  width: 320px;
+  padding: 10px 11px;
+  font-size: 1.09rem;
+  border-radius: 6px;
+  border: 1px solid #bbb;
+  background: #f8f8f8;
+  outline: none;
+  transition: border 0.18s;
+}
+.search-bar input:focus {
+  border: 1.5px solid #48C774;
+}
+.search-bar button {
+  background: #48C774;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 21px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.search-bar button:hover {
+  background: #25743c;
+}
+
+.parceiros-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+  gap: 24px;
+}
+
+.card-parceiro {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 1px 14px rgba(38,70,42,0.08);
+  padding: 18px 16px 18px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  transition: box-shadow 0.18s, transform 0.15s;
+  border: 2px solid transparent;
+}
+.card-parceiro:hover {
+  box-shadow: 0 3px 20px rgba(38,70,42,0.16);
+  border: 2px solid #48C774;
+  transform: translateY(-3px) scale(1.015);
+}
+
+.card-avatar {
+  margin-bottom: 11px;
+}
+.card-avatar.eco {
+  color: #2196F3;
+}
+.card-avatar.coo {
+  color: #48C774;
+}
+.card-avatar.pev {
+  color: #ff9800;
+}
+.card-parceiro h3 {
+  margin: 6px 0 3px 0;
+  font-size: 1.17rem;
+  font-weight: 700;
+}
+.card-parceiro .bairro {
+  color: #333;
+  font-size: 1.06rem;
+  margin-bottom: 7px;
+}
+.card-parceiro .data-inclusao {
+  font-size: 0.99rem;
+  color: #666;
+  margin-top: 8px;
+}
+
+@media (max-width: 700px) {
+  main { padding: 22px 4px 34px 4px;}
+  .search-bar input { width: 100%; }
+}
